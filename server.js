@@ -5,7 +5,7 @@ import route from "./routes/route.js";
 import menurouter from "./routes/menuRouter.js";
 import mongoose from "mongoose";
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 dotenv.config();
 app.use(bodyParser.json());
 mongoose
