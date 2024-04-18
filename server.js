@@ -20,3 +20,6 @@ mongoose
 
 app.use("/details", route);
 app.use("/menu", menurouter);
+app.get("/", (req, res) => {
+  res.send(`<h1>Home Page</h1>`);
+});
